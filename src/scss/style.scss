@@ -14,9 +14,12 @@ $small : 14px;
 %max{
   max-width:1150px;
 }
-
+%pt-pb{
+  padding: 100px 0;
+}
 
 @import "header";
+@import "sections";
 
 
 *{
@@ -25,5 +28,5 @@ $small : 14px;
   font-family: 'Source Sans Pro', sans-serif;
   list-style: none;
   text-decoration: none;
-  color: $brown
+  color: $brown;
 }

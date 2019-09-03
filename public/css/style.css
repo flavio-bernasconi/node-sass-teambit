@@ -1,19 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap);header .cookie {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap);.back .contenitore,
 .hero,
 header nav {
   max-width: 1150px;
 }
 
-header .cookie {
-  height: 40px;
-  background: #ffe7d2;
-  font-size: 14px;
+.back .contenitore .cons,
+.back .contenitore {
+  padding: 100px 0;
 }
 
 header nav {
@@ -48,12 +41,25 @@ header nav .nav_btn ul li a {
   font-size: 50px;
   line-height: 70px;
   margin-bottom: 40px;
+  font-weight: 600;
 }
 
 .hero .hero_text h3 {
   font-weight: normal;
-  font-size: 27px;
+  font-size: 25px;
   margin-bottom: 40px;
+}
+
+.hero .hero_text .hero_text_btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.hero .hero_text .hero_text_btn p {
+  margin: 0 10px;
+  opacity: 0.6;
+  font-size: 14px;
 }
 
 .hero .hero_text .hero_text_btn a {
@@ -61,9 +67,7 @@ header nav .nav_btn ul li a {
   padding: 10px 20px;
   color: white;
   text-align: center;
-  margin-right: 20px;
   display: inline-block;
-  margin-bottom: 20px;
   border-radius: 8px;
 }
 
@@ -74,6 +78,37 @@ header nav .nav_btn ul li a {
 .hero .hero_img img {
   width: 100%;
   height: auto;
+}
+
+.back {
+  background: #ffe7d2;
+}
+
+.back .contenitore {
+  margin: auto;
+  text-align: center;
+}
+
+.back .contenitore h3 {
+  font-size: 40px;
+  padding: 0 40px;
+}
+
+.back .contenitore .cons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.back .contenitore .cons .cons_single {
+  width: 30%;
+  font-size: 1.125rem;
+}
+
+.back .contenitore .cons .cons_single img {
+  width: 160px;
+  margin-bottom: 20px;
 }
 
 * {

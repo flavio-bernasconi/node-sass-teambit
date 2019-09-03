@@ -1,0 +1,29 @@
+.back{
+  background: $main-color;
+  .contenitore{
+    @extend %max;
+    margin: auto;
+    text-align: center;
+    @extend %pt-pb;
+    h3{
+      font-size: 40px;
+      padding: 0 40px;
+    }
+    .cons{
+      @extend %pt-pb;
+      display: flex;
+      flex-wrap: wrap;      
+      justify-content: space-between;
+      align-items: baseline;
+      .cons_single{
+        width: 30%;
+        font-size: 1.125rem;
+        img{
+          width:160px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+  }
+}
