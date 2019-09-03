@@ -1,7 +1,7 @@
 
 header{
   nav{
-    @extend %max;
+    max-width: $max;
     margin: auto;
     padding: 20px 0;
     border-bottom: solid 1px rgb(144, 144, 144);
@@ -38,25 +38,7 @@ header{
       font-size: 25px;
       margin-bottom: 40px;
     }
-    .hero_text_btn{
-      display: flex;
-      align-items: center;
-      margin-bottom: 30px;
-      p{
-        margin: 0 10px;
-        opacity: 0.6;
-        font-size: $small;
-      }
-
-      a{
-       background: #30488f;
-       padding: 10px 20px;
-       color: white;
-       text-align: center;
-       display: inline-block;
-       border-radius: 8px;
-     }
-    }
+    @include btn-login;
   }
   .hero_img{
     width: 46%;

@@ -7,7 +7,10 @@ $medium : 26px;
 $large: 40px;
 $learn : 22px;
 
-$left : row;
+$max : 1150px;
+
+$just : flex-start;
+$margin-neg : -2%;
 
 
 %flex-center {
@@ -16,12 +19,39 @@ $left : row;
   align-items: center;
   flex-wrap: wrap;
 }
+
+//login buttons
+@mixin btn-login($justify : $just){
+  .hero_text_btn{
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    margin-bottom: 30px;
+    p{
+      margin: 0 10px;
+      opacity: 0.6;
+      font-size: $small;
+    }
+
+    a{
+     background: #30488f;
+     padding: 10px 20px;
+     color: white;
+     text-align: center;
+     display: inline-block;
+     border-radius: 8px;
+   }
+  }
+}
+
+
 %max{
   max-width:1150px;
 }
 %pt-pb{
   padding: 100px 0;
 }
+//style big image and text about services
 %servizio{
   .text-service{
     width: 40%;
@@ -48,9 +78,12 @@ $left : row;
 
 }
 
+
+
 @import "header";
 @import "sections";
 @import "main-section";
+@import "footer";
 
 body{
   overflow-x: hidden;

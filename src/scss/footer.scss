@@ -1,0 +1,13 @@
+footer{
+  display: flex;
+  max-width: $max;
+  margin:auto;
+  .site-map{
+    width: 100%;
+    .column{
+      width:calc(100%/5);
+      display: inline-block;
+    }
+
+  }
+}
