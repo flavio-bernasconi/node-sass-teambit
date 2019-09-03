@@ -3,6 +3,11 @@
 $main-color: #ffe7d2;
 $brown : rgb(88, 64, 44);
 $small : 14px;
+$medium : 26px;
+$large: 40px;
+$learn : 22px;
+
+$left : row;
 
 
 %flex-center {
@@ -17,10 +22,39 @@ $small : 14px;
 %pt-pb{
   padding: 100px 0;
 }
+%servizio{
+  .text-service{
+    width: 40%;
+    padding-left: 30px;
+    h3{
+      font-size: $medium;
+    }
+    h5{
+      font-size: 24px;
+      font-weight: 400;
+      margin:40px 0;
+      padding-right: 30px;
+    }
+    a{
+      display: block;
+      font-size: $learn;
+      margin-bottom: 50px;
+    }
+    img{
+      display: block;
+      margin: auto;
+    }
+  }
+
+}
 
 @import "header";
 @import "sections";
+@import "main-section";
 
+body{
+  overflow-x: hidden;
+}
 
 *{
   margin:0;

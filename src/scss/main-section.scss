@@ -1,0 +1,30 @@
+.service.left{
+  display: flex;
+  flex-direction: row;
+  @extend %pt-pb;
+  @extend %servizio;
+  .big-img{
+    width: 50%;
+    margin-left: -2%;
+    img{
+      width:100%;
+      height: auto;
+    }
+  }
+
+}
+
+.service.right{
+  display: flex;
+  flex-direction: row-reverse;
+  @extend %pt-pb;
+  @extend %servizio;
+  .big-img{
+    width: 50%;
+    margin-right: -2%;
+    img{
+      width:100%;
+      height: auto;
+    }
+  }
+}
