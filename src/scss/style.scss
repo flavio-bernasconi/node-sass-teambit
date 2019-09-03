@@ -20,31 +20,6 @@ $margin-neg : -2%;
   flex-wrap: wrap;
 }
 
-//login buttons
-@mixin btn-login($justify : $just){
-  .hero_text_btn{
-    display: flex;
-    align-items: center;
-    justify-content: $justify;
-    margin-bottom: 30px;
-    p{
-      margin: 0 10px;
-      opacity: 0.6;
-      font-size: $small;
-    }
-
-    a{
-     background: #30488f;
-     padding: 10px 20px;
-     color: white;
-     text-align: center;
-     display: inline-block;
-     border-radius: 8px;
-   }
-  }
-}
-
-
 %max{
   max-width:1150px;
 }
@@ -66,7 +41,8 @@ $margin-neg : -2%;
       padding-right: 30px;
     }
     a{
-      display: block;
+      display: flex;
+      align-items: center;
       font-size: $learn;
       margin-bottom: 50px;
     }
@@ -74,9 +50,43 @@ $margin-neg : -2%;
       display: block;
       margin: auto;
     }
+    i{
+      font-size: 19px;
+      margin-left: 8px;
+    }
   }
 
 }
+
+//login buttons
+@mixin btn-login($justify : $just){
+  .hero_text_btn{
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+    margin-bottom: 30px;
+    p{
+      margin: 0 10px;
+      opacity: 0.6;
+      font-size: $small;
+    }
+
+    a{
+     background: #30488f;
+     padding: 10px 20px;
+     color: white;
+     text-align: center;
+     display: inline-block;
+     border-radius: 8px;
+   }
+   i{
+     font-size: 20px;
+     color: white;
+     margin-right: 10px;
+   }
+  }
+}
+
 
 
 
@@ -96,4 +106,13 @@ body{
   list-style: none;
   text-decoration: none;
   color: $brown;
+}
+
+
+.fix{
+  position: fixed;
+  width: 100%;
+  top:0;
+  box-shadow: 1px 1px 3px rgb(186, 186, 186);
+  border-bottom: none;
 }

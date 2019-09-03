@@ -1,23 +1,29 @@
 
 header{
+  background: white;
   nav{
     max-width: $max;
     margin: auto;
-    padding: 20px 0;
+    padding: 20px 0 15px 0;
     border-bottom: solid 1px rgb(144, 144, 144);
     display: flex;
     justify-content: space-between;
+    z-index: 999;
 
     .nav_btn ul li{
         display: inline-block;
         margin:0 30px;
         a{
           text-transform: capitalize;
-
         }
       }
   }
 }
+
+// .fix nello styile.scss
+
+
+
 
 .hero{
   display: flex;
@@ -45,6 +51,12 @@ header{
     img{
         width: 100%;
         height: auto;
+    }
+  }
+  a{
+    i{
+      font-size: 13px;
+      margin-left: 8px;
     }
   }
 

@@ -33,7 +33,8 @@ footer,
 
 .service.right .text-service a,
 .service.left .text-service a {
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 22px;
   margin-bottom: 50px;
 }
@@ -44,13 +45,24 @@ footer,
   margin: auto;
 }
 
+.service.right .text-service i,
+.service.left .text-service i {
+  font-size: 19px;
+  margin-left: 8px;
+}
+
+header {
+  background: white;
+}
+
 header nav {
   max-width: 1150px;
   margin: auto;
-  padding: 20px 0;
+  padding: 20px 0 15px 0;
   border-bottom: solid 1px #909090;
   display: flex;
   justify-content: space-between;
+  z-index: 999;
 }
 
 header nav .nav_btn ul li {
@@ -108,6 +120,12 @@ header nav .nav_btn ul li a {
   border-radius: 8px;
 }
 
+.hero .hero_text .hero_text_btn i {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+
 .hero .hero_img {
   width: 46%;
 }
@@ -115,6 +133,11 @@ header nav .nav_btn ul li a {
 .hero .hero_img img {
   width: 100%;
   height: auto;
+}
+
+.hero a i {
+  font-size: 13px;
+  margin-left: 8px;
 }
 
 .back {
@@ -216,6 +239,7 @@ header nav .nav_btn ul li a {
 }
 
 .testimonial.back .contenitore .box {
+  position: relative;
   margin: auto;
   width: 50%;
   background: white;
@@ -224,6 +248,35 @@ header nav .nav_btn ul li a {
   font-size: 18px;
   text-align: left;
   font-weight: lighter;
+}
+
+.testimonial.back .contenitore .box .box_text {
+  margin-bottom: 25px;
+}
+
+.testimonial.back .contenitore .box .box_text img {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  max-width: 37px;
+}
+
+.testimonial.back .contenitore .box .box_img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testimonial.back .contenitore .box .box_img img {
+  margin-right: 15px;
+  max-width: 50px;
+}
+
+.testimonial.back .contenitore .box .box_img .nomi {
+  font-size: 20px;
+}
+
+.testimonial.back .contenitore .box .box_img .ruolo {
+  font-size: 14px;
 }
 
 .testimonial.back .contenitore .hero_text_btn {
@@ -246,6 +299,17 @@ header nav .nav_btn ul li a {
   text-align: center;
   display: inline-block;
   border-radius: 8px;
+}
+
+.testimonial.back .contenitore .hero_text_btn i {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+
+.testimonial.back a .fa-arrow-right {
+  font-size: 13px;
+  margin-left: 8px;
 }
 
 footer {
@@ -302,5 +366,13 @@ body {
   list-style: none;
   text-decoration: none;
   color: #58402c;
+}
+
+.fix {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 1px 1px 3px #bababa;
+  border-bottom: none;
 }
 
