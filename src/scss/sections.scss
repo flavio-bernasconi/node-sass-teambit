@@ -1,7 +1,7 @@
 .back{
   background: $main-color;
   .contenitore{
-    @extend %max;
+    max-width: $max;
     margin: auto;
     text-align: center;
     @extend %pt-pb;
@@ -29,9 +29,18 @@
         width: 60px;
       }
     }
-    .cons_big img{
-      width:280px;
-    }
+    .cons_big {
+      img{
+        width:280px;
+      }
+      h3{
+      padding-top: 100px;
+      }
 
+    }
+  }
+  hr{
+    margin: auto;
+    max-width: $max;
   }
 }

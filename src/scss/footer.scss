@@ -1,12 +1,37 @@
 footer{
   display: flex;
   max-width: $max;
+  @extend %pt-pb;
   margin:auto;
+  .logo{
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    img{
+      margin-right: 30px;
+    }
+    h4{
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
   .site-map{
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+
     .column{
-      width:calc(100%/5);
       display: inline-block;
+      margin:0 15px;
+      h5{
+        font-size: 21px;
+        margin-bottom: 25px;
+      }
+      a{
+        display: block;
+        font-size: $small;
+        margin-bottom: 15px;
+      }
     }
 
   }
