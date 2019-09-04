@@ -14,3 +14,28 @@ $(window).scroll(function() {
       $("nav").css("border-bottom" , "solid 1px rgb(144, 144, 144)")
     }
 });
+
+
+
+
+
+
+$(document).ready(
+  function () {
+
+    $(".nav_btn .rel").hover(
+      function(){
+        $(".sub-nav").addClass("active")
+      });
+
+      $(".nav_btn .rel").mouseleave(
+        function(){
+          $(".sub-nav").removeClass("active")
+        })
+
+
+
+
+
+  }
+)

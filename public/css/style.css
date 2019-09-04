@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap);.testimonial.back .contenitore,
-.hero {
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap);.testimonial.back .contenitore {
   max-width: 1150px;
 }
 
@@ -37,6 +36,7 @@ footer,
   align-items: center;
   font-size: 22px;
   margin-bottom: 50px;
+  color: #30488F;
 }
 
 .service.right .text-service img,
@@ -47,7 +47,8 @@ footer,
 
 .service.right .text-service i,
 .service.left .text-service i {
-  font-size: 19px;
+  color: #30488F;
+  font-size: 17px;
   margin-left: 8px;
 }
 
@@ -65,19 +66,48 @@ header nav {
   z-index: 999;
 }
 
+header nav .nav_btn ul .rel {
+  padding: 10px 0;
+}
+
 header nav .nav_btn ul li {
   display: inline-block;
   margin: 0 30px;
 }
 
 header nav .nav_btn ul li a {
+  font-size: 14px;
   text-transform: capitalize;
+  font-weight: 600;
+}
+
+header nav .nav_btn ul li .rel {
+  position: relative;
+}
+
+header nav .nav_btn ul li .sub-nav {
+  display: none;
+  position: absolute;
+  background: white;
+  margin-top: 58px;
+  top: 0;
+  border: solid 1px #bdbdbd;
+  box-shadow: 2px 2px 5px #bdbdbd;
+  border-radius: 8px;
+}
+
+header nav .nav_btn ul li .sub-nav li {
+  margin-right: 30px;
+  margin-left: 10px;
+  display: block;
+  padding: 15px 20px 15px 10px;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
   margin: 100px auto;
+  max-width: 1150px;
 }
 
 .hero .hero_text {
@@ -374,5 +404,9 @@ body {
   top: 0;
   box-shadow: 1px 1px 3px #bababa;
   border-bottom: none;
+}
+
+.active {
+  display: block !important;
 }
 

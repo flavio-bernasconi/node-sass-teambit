@@ -5,7 +5,9 @@ $brown : rgb(88, 64, 44);
 $small : 14px;
 $medium : 26px;
 $large: 40px;
+
 $learn : 22px;
+$color-btn:#30488F;
 
 $max : 1150px;
 
@@ -45,13 +47,15 @@ $margin-neg : -2%;
       align-items: center;
       font-size: $learn;
       margin-bottom: 50px;
+      color: $color-btn;
     }
     img{
       display: block;
       margin: auto;
     }
     i{
-      font-size: 19px;
+      color: $color-btn;
+      font-size: 17px;
       margin-left: 8px;
     }
   }
@@ -89,9 +93,8 @@ $margin-neg : -2%;
 
 
 
-
 @import "header";
-@import "sections";
+@import "pros";
 @import "main-section";
 @import "footer";
 
@@ -116,3 +119,16 @@ body{
   box-shadow: 1px 1px 3px rgb(186, 186, 186);
   border-bottom: none;
 }
+
+.active{
+  display: block!important;
+}
+
+
+
+
+
+
+
+
+//
