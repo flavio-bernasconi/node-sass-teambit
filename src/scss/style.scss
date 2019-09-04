@@ -5,14 +5,10 @@ $brown : rgb(88, 64, 44);
 $small : 14px;
 $medium : 26px;
 $large: 40px;
-
 $learn : 22px;
 $color-btn:#30488F;
-
 $max : 1150px;
-
 $just : flex-start;
-$margin-neg : -2%;
 
 
 %flex-center {
@@ -92,7 +88,6 @@ $margin-neg : -2%;
 }
 
 
-
 @import "header";
 @import "pros";
 @import "main-section";
@@ -118,6 +113,7 @@ body{
   top:0;
   box-shadow: 1px 1px 3px rgb(186, 186, 186);
   border-bottom: none;
+  z-index: 999;
 }
 
 .active{

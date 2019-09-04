@@ -100,7 +100,34 @@ header nav .nav_btn ul li .sub-nav li {
   margin-right: 30px;
   margin-left: 10px;
   display: block;
-  padding: 15px 20px 15px 10px;
+  padding: 10px 20px 15px 10px;
+}
+
+header nav .nav_btn ul li .sub-nav li a:hover {
+  color: #30488F;
+}
+
+header nav .nav_btn ul .btn-blue a {
+  background: white;
+  color: #30488F;
+  border: solid 1px #30488F;
+  display: block;
+  padding: 7px 20px;
+  border-radius: 10px;
+}
+
+header nav .nav_btn ul .btn-blue a i {
+  color: #30488F;
+  margin-right: 10px;
+}
+
+header nav .nav_btn ul .btn-blue a:hover {
+  background: #30488F;
+  color: white;
+}
+
+header nav .nav_btn ul .btn-blue a:hover i {
+  color: white;
 }
 
 .hero {
@@ -404,6 +431,7 @@ body {
   top: 0;
   box-shadow: 1px 1px 3px #bababa;
   border-bottom: none;
+  z-index: 999;
 }
 
 .active {

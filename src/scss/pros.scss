@@ -1,3 +1,4 @@
+//pros and cons 
 .back{
   background: $main-color;
   .contenitore{
@@ -6,7 +7,7 @@
     text-align: center;
     @extend %pt-pb;
     h3{
-      font-size: 26px;
+      font-size: $medium;
       width: 60%;
       margin:auto;
       font-weight: 600;

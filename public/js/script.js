@@ -10715,7 +10715,8 @@ $(window).scroll(function () {
     $("header").removeClass("fix");
     $("nav").css("border-bottom", "solid 1px rgb(144, 144, 144)");
   }
-});
+}); //class fix in style.scss
+
 $(document).ready(function () {
   $(".nav_btn .rel").hover(function () {
     $(".sub-nav").addClass("active");

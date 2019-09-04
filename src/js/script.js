@@ -15,9 +15,7 @@ $(window).scroll(function() {
     }
 });
 
-
-
-
+//class fix in style.scss
 
 
 $(document).ready(
@@ -32,10 +30,5 @@ $(document).ready(
         function(){
           $(".sub-nav").removeClass("active")
         })
-
-
-
-
-
   }
 )

@@ -11,9 +11,9 @@ header{
     z-index: 999;
 
     .nav_btn ul{
-        .rel{
-          padding:10px 0;
-        }
+          .rel{
+            padding:10px 0;
+            }
           li{
             display: inline-block;
             margin:0 30px;
@@ -38,10 +38,36 @@ header{
                 margin-right: 30px;
                 margin-left: 10px;
                 display: block;
-                padding: 15px 20px 15px 10px;
+                padding: 10px 20px 15px 10px;
+                a{
+                  &:hover{
+                    color: $color-btn
+                  }
+                }
               }
             }
-        }
+          }
+          .btn-blue{
+            a{
+              background: white;
+              color: $color-btn;
+              border: solid 1px $color-btn;
+              display: block;
+              padding: 7px 20px;
+              border-radius: 10px;
+              i{
+                color: $color-btn;
+                margin-right: 10px;
+              }
+              &:hover{
+                background: $color-btn;
+                color: white;
+                i{
+                  color: white;
+                }
+              }
+            }
+          }
       }
   }
 }
@@ -50,7 +76,7 @@ header{
 
 
 
-
+//first section after the menu
 .hero{
   display: flex;
   justify-content: space-between;
