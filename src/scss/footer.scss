@@ -1,6 +1,6 @@
 footer{
   display: flex;
-  max-width: $max;
+  max-width: $width-limit;
   @extend %pt-pb;
   margin:auto;
   .logo{

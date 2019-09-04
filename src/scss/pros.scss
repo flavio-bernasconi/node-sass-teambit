@@ -2,7 +2,7 @@
 .back{
   background: $main-color;
   .contenitore{
-    max-width: $max;
+    max-width: $width-limit;
     margin: auto;
     text-align: center;
     @extend %pt-pb;
@@ -42,6 +42,6 @@
   }
   hr{
     margin: auto;
-    max-width: $max;
+    max-width: $width-limit;
   }
 }

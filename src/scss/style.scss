@@ -5,9 +5,13 @@ $brown : rgb(88, 64, 44);
 $small : 14px;
 $medium : 26px;
 $large: 40px;
-$learn : 22px;
-$color-btn:#30488F;
-$max : 1150px;
+//font size btn learn more section servizi
+$size-btn-service : 22px;
+//colore dei bottoni sign in coi social
+$btn-blu:#30488F;
+//max width del contenitore
+$width-limit : 1150px;
+//classe per giustificare i servizi un volta a destre e una a sinistra
 $just : flex-start;
 
 
@@ -41,16 +45,16 @@ $just : flex-start;
     a{
       display: flex;
       align-items: center;
-      font-size: $learn;
+      font-size: $size-btn-service;
       margin-bottom: 50px;
-      color: $color-btn;
+      color: $btn-blu;
     }
     img{
       display: block;
       margin: auto;
     }
     i{
-      color: $color-btn;
+      color: $btn-blu;
       font-size: 17px;
       margin-left: 8px;
     }
